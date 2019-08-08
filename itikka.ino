@@ -27,6 +27,7 @@ void setup() {
   connectToWifi();
   connectToMqttBroker();
 
+  // TODO: add battery level monitoring
   if (shtStatus == 0){
     String temp = String(sht30.cTemp);
     Serial.print("Temperature in Celsius : ");
